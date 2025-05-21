@@ -24,7 +24,7 @@ for arg in "$@"; do
   esac
 done
 
-REPO="https://$GH_TOKEN@github.com/amarkes/truff-login.git"
+REPO="https://$GH_TOKEN@github.com/amarkes/financeirofront.git"
 
 # Se foi passado um tipo de versão, atualiza o package.json
 if [[ "$VERSION_TYPE" =~ ^(patch|minor|major)$ ]]; then
