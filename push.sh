@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# Carrega variáveis do .env
-if [ -f .env ]; then
-  export $(grep -v '^#' .env | xargs)
-fi
-
 COMMIT_MESSAGE="init"
 VERSION_TYPE=""
 
@@ -37,14 +32,9 @@ git config user.name "amarkes"
 git config user.email "tmowna@gmail.com"
 git add .
 git commit -m "$COMMIT_MESSAGE"
-git push "$REPO" HEAD:main
+git push
 
 
-# Se foi passado um tipo de versão, atualiza o package.json
-if [[ "$VERSION_TYPE" =~ ^(patch|minor|major)$ ]]; then
-  echo "Atualizando versão ($VERSION_TYPE)..."
-  git push "$REPO" --tags
-fi
 
 
 # Apenas commit normal
