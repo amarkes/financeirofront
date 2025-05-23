@@ -1,11 +1,14 @@
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
+import { cn } from '@/lib/utils'
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
+import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 import loginImage from '@/assets/login.webp'
+import { Link } from "react-router-dom";
+import FooterPolice from '@/components/footer-police/index'
 
-export default function LoginPages({
+
+export default function SignIn({
   className,
   ...props
 }) {
@@ -42,9 +45,9 @@ export default function LoginPages({
                   
                   <div className="text-center text-sm">
                     Don&apos;t have an account?{" "}
-                    <a href="#" className="underline underline-offset-4">
+                    <Link to="/sign-up" className="underline underline-offset-4">
                       Sign up
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </form>
@@ -56,11 +59,7 @@ export default function LoginPages({
               </div>
             </CardContent>
           </Card>
-          <div
-            className="text-muted-foreground *:[a]:hover:text-primary text-center text-xs text-balance *:[a]:underline *:[a]:underline-offset-4">
-            By clicking continue, you agree to our <a href="#">Terms of Service</a>{" "}
-            and <a href="#">Privacy Policy</a>.
-          </div>
+          <FooterPolice />
         </div>
       </div>
     </div>

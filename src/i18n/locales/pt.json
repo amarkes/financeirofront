@@ -1,0 +1,18 @@
+{
+    "global": {
+        "footerText": "By clicking continue, you agree to our",
+        "footerTerms": "Terms of Service",
+        "footerPolice": "Privacy Policy",
+        "footerAnd": "and"
+    },
+    "SignUp": {
+        "title": "Create your account",
+        "description": "Sign up to access the system and manage your information.",
+        "name": "Name",
+        "email": "E-mail",
+        "password": "Password",
+        "button": "Register",
+        "loginText": "Already have account?",
+        "loginButton": "Sign in"
+    }
+}

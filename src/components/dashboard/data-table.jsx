@@ -23,13 +23,27 @@ import {
   IconChevronsLeft,
   IconChevronsRight,
   IconCircleCheckFilled,
-  IconDotsVertical,
+  EllipsisVertical,
   IconGripVertical,
   IconLayoutColumns,
   IconLoader,
   IconPlus,
   IconTrendingUp,
-} from "@tabler/icons-react"
+} from "lucide-react"
+// import {
+//   IconChevronDown,
+//   IconChevronLeft,
+//   IconChevronRight,
+//   IconChevronsLeft,
+//   IconChevronsRight,
+//   IconCircleCheckFilled,
+//   IconDotsVertical,
+//   IconGripVertical,
+//   IconLayoutColumns,
+//   IconLoader,
+//   IconPlus,
+//   IconTrendingUp,
+// } from "@tabler/icons-react"
 import {
   flexRender,
   getCoreRowModel,
@@ -272,7 +286,7 @@ const columns = [
             variant="ghost"
             className="data-[state=open]:bg-muted text-muted-foreground flex size-8"
             size="icon">
-            <IconDotsVertical />
+            <EllipsisVertical />
             <span className="sr-only">Open menu</span>
           </Button>
         </DropdownMenuTrigger>
